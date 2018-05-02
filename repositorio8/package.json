@@ -1,16 +1,17 @@
 {
-  "name": "findemor-chat",
+  "name": "repositorio",
   "version": "0.0.1",
-  "description": "Demo de node",
+  "description": "practicas",
   "main": "app.js",
   "start": "node app",
-  "author": "@oscar",
+  "author": "oscar",
   "dependencies": {
     "body-parser": "^1.13.1",
     "express": "^4.13.0",
-    
+    "jade": "^1.11.0",
     "mongodb": "^2.0.35",
     "socket.io": "^1.3.5",
-    "unirest": "^0.4.2"
+    "unirest": "^0.4.2",
+    "ejs": "^2.5.7"
   }
 }
