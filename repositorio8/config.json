@@ -1,0 +1,6 @@
+{
+	"db": "mongodb://findemor:demo@ds036648.mongolab.com:36648/solu-chat",
+	"port": 5083,
+	"apikey": "pass",
+	"apiurl": "http://solu-chat.herokuapp.com/api"
+}

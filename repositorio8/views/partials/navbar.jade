@@ -1,0 +1,15 @@
+nav.navbar.navbar-default
+	div.container-fluid
+		div.navbar-header
+			button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navbar")
+				span.sr-only="Toggle navigation"
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+			a.navbar-brand(href="/messages")="chat"
+		div#navbar.navbar-collapse.collapse
+			ul.nav.navbar-nav
+				li(class=(active == "chat" ? "active" : ""))
+					a(href="/messages")="chat"
+				li(class=(active == "historial" ? "active" : ""))
+					a(href="/messages/historial")="historial"

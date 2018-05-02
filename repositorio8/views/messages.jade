@@ -1,0 +1,31 @@
+html
+	head
+		title!= 'Historial de tareas'
+		include partials/head
+
+	body
+		div.container
+			include partials/navbar
+
+			table#chat.table.table-striped
+				thead
+					tr
+						th="tareas"
+						th="descripcion"
+						th
+				tbody
+					each msg in messages
+						tr
+							td=msg.username
+							td=msg.message
+							td.timestamp(data=msg.timestamp)=msg.timestamp
+
+			nav
+				ul.pager
+					li.previous(class=(page > 1 ? "" : "disabled"))
+						a(href="/messages/historial?page="+(page-1) aria-label="Anterior")="← Anterior"
+					li.next(class=(messages.length == 10 ? "" : "disabled"))
+						a(href="/messages/historial?page="+(page+1) aria-label="Siguiente")="Siguiente →"
+						
+		script(src="/public/scripts.js")
+
